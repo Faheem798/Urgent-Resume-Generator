@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResumeForge - Professional Resume Builder</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Form -->
+        <div class="sidebar">
+            <div class="logo">
+                <h1><i class="fas fa-file-alt"></i> ResumeForge</h1>
+                <p style="color: #666; font-size: 14px;">Professional Resume Builder</p>
+            </div>
+
+            <!-- AI Enhancement Section -->
+            <div class="form-section ai-section">
+                <div class="section-title">
+                    <i class="fas fa-magic"></i> AI-Powered Enhancement
+                </div>
+                <p style="color: #ffffff; font-size: 14px; margin-bottom: 15px;">
+                    <i class="fas fa-sparkles"></i> Use our advanced AI to create compelling, professional content that stands out to employers.
+                </p>
+                <div class="ai-features">
+                    <div class="ai-feature">
+                        <i class="fas fa-user-tie"></i> Professional Summaries
+                    </div>
+                    <div class="ai-feature">
+                        <i class="fas fa-briefcase"></i> Job Descriptions
+                    </div>
+                    <div class="ai-feature">
+                        <i class="fas fa-cogs"></i> Skill Recommendations
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="form-section">
+                <div class="section-title">
+                    <i class="fas fa-user"></i> Personal Information
+                </div>
+                
+                <!-- Profile Picture Upload -->
+                <div class="form-group">
+                    <label>Profile Picture (Optional)</label>
+                    <div class="photo-upload-container">
+                        <div class="photo-preview" id="photoPreview">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Click to upload photo</span>
+                        </div>
+                        <input type="file" id="profilePhoto" accept="image/*" style="display: none;">
+                        <button type="button" class="btn btn-small" onclick="document.getElementById('profilePhoto').click()">
+                            <i class="fas fa-camera"></i> Upload Photo
+                        </button>
+                        <button type="button" class="btn btn-secondary btn-small" onclick="removePhoto()" style="display: none;" id="removePhotoBtn">
+                            <i class="fas fa-trash"></i> Remove
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="fullName" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label>Professional Title</label>
+                    <input type="text" id="title" placeholder="Software Engineer">
+                    <button class="btn enhance-btn btn-small" onclick="enhanceContent('title')">
+                        <i class="fas fa-magic"></i> Enhance
+                    </button>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" id="phone" placeholder="+1 (555) 123-4567">
+                </div>
+                <div class="form-group">
+                    <label>Location</label>
+                    <input type="text" id="location" placeholder="New York, NY">
+                </div>
+                <div class="form-group">
+                    <label>LinkedIn</label>
+                    <input type="url" id="linkedin" placeholder="https://linkedin.com/in/johndoe">
+                </div>
+            </div>
+
+            <!-- Professional Summary -->
+            <div class="form-section">
+                <div class="section-title">
+                    <i class="fas fa-quote-left"></i> Professional Summary
+                </div>
+                <div class="form-group">
+                    <textarea id="summary" placeholder="Brief professional summary highlighting your key strengths and experience..."></textarea>
+                    <button class="btn enhance-btn btn-small" onclick="enhanceContent('summary')">
+                        <i class="fas fa-magic"></i> Enhance with AI
+                    </button>
+                </div>
+            </div>
+
+            <!-- Experience -->
+            <div class="form-section">
+                <div class="section-title">
+                    <i class="fas fa-briefcase"></i> Work Experience
+                </div>
+                <div id="experience-container">
+                    <div class="dynamic-section">
+                        <div class="form-group">
+                            <label>Job Title</label>
+                            <input type="text" class="job-title" placeholder="Software Engineer">
+                        </div>
+                        <div class="form-group">
+                            <label>Company</label>
+                            <input type="text" class="company" placeholder="Tech Corp">
+                        </div>
+                        <div class="form-group">
+                            <label>Duration</label>
+                            <input type="text" class="duration" placeholder="Jan 2020 - Present">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="job-description" placeholder="Describe your responsibilities and achievements..."></textarea>
+                            <button class="btn enhance-btn btn-small" onclick="enhanceJobDescription(this)">
+                                <i class="fas fa-magic"></i> Enhance
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" onclick="addExperience()">
+                    <i class="fas fa-plus"></i> Add Experience
+                </button>
+            </div>
+
+            <!-- Education -->
+            <div class="form-section">
+                <div class="section-title">
+                    <i class="fas fa-graduation-cap"></i> Education
+                </div>
+                <div id="education-container">
+                    <div class="dynamic-section">
+                        <div class="form-group">
+                            <label>Degree</label>
+                            <input type="text" class="degree" placeholder="Bachelor of Science in Computer Science">
+                        </div>
+                        <div class="form-group">
+                            <label>Institution</label>
+                            <input type="text" class="institution" placeholder="University of Technology">
+                        </div>
+                        <div class="form-group">
+                            <label>Year</label>
+                            <input type="text" class="year" placeholder="2018">
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-secondary" onclick="addEducation()">
+                    <i class="fas fa-plus"></i> Add Education
+                </button>
+            </div>
+
+            <!-- Skills -->
+            <div class="form-section">
+                <div class="section-title">
+                    <i class="fas fa-cogs"></i> Skills
+                </div>
+                <div class="form-group">
+                    <label>Skills (comma-separated)</label>
+                    <textarea id="skills" placeholder="JavaScript, Python, React, Node.js, SQL, AWS"></textarea>
+                    <button class="btn enhance-btn btn-small" onclick="enhanceContent('skills')">
+                        <i class="fas fa-magic"></i> Suggest Skills
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Controls -->
+            <div class="controls">
+                <div class="template-selector">
+                    <button class="template-btn active" onclick="changeTemplate('modern')">Modern</button>
+                    <button class="template-btn" onclick="changeTemplate('professional')">Professional</button>
+                    <button class="template-btn" onclick="changeTemplate('creative')">Creative</button>
+                </div>
+                <div class="export-controls">
+                    <button class="btn" onclick="downloadPDF()">
+                        <i class="fas fa-file-pdf"></i> Download PDF
+                    </button>
+                    <button class="btn btn-success" onclick="downloadPNG()">
+                        <i class="fas fa-image"></i> Download PNG
+                    </button>
+                </div>
+            </div>
+
+            <!-- Resume Preview -->
+            <div class="resume-container">
+                <div id="resume-preview" class="template-modern">
+                    <!-- Resume content will be generated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Enhancement Modal -->
+    <div id="aiModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-robot"></i> AI Enhancement</h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Enhancing your content with AI...</p>
+            </div>
+            <div id="enhancement-result" style="display: none;">
+                <h3>Enhanced Content:</h3>
+                <div id="enhanced-content" style="background: #f8f9fa; padding: 15px; border-radius: 8px; margin: 15px 0;"></div>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn" onclick="acceptEnhancement()">Accept</button>
+                    <button class="btn btn-secondary" onclick="closeModal()">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
