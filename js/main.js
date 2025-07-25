@@ -139,7 +139,7 @@
         function changeTemplate(template) {
             currentTemplate = template;
             const preview = document.getElementById('resume-preview');
-            preview.className = `template-${template}`;
+            preview.className = 'template-' + template;
 
             // Update active button
             document.querySelectorAll('.template-btn').forEach(btn => btn.classList.remove('active'));
