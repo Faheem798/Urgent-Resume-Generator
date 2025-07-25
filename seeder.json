@@ -1,0 +1,953 @@
+[
+    {
+        "fullName": "Jane Doe",
+        "title": "Senior Software Engineer",
+        "email": "jane.doe@example.com",
+        "phone": "+1 (123) 456-7890",
+        "address": "123 Tech Lane, Silicon Valley, CA",
+        "linkedin": "https://linkedin.com/in/janedoe",
+        "github": "https://github.com/janedoe",
+        "portfolio": "https://janedoe.dev",
+        "summary": "Highly skilled and results-oriented Senior Software Engineer with 8+ years of experience in developing and deploying scalable web applications. Proven ability to lead cross-functional teams, optimize system performance, and deliver high-quality software solutions.",
+        "skills": "Python, JavaScript, React, Node.js, AWS, Docker, Kubernetes, SQL, MongoDB, Git, CI/CD, Agile Methodologies",
+        "experience": [
+            {
+                "jobTitle": "Senior Software Engineer",
+                "company": "Innovate Solutions Inc.",
+                "duration": "Jan 2020 - Present",
+                "description": "• Led a team of 5 engineers in the development of a new microservices architecture, resulting in a 30% improvement in system efficiency.\n• Designed and implemented RESTful APIs for various client applications, handling over 1 million requests daily.\n• Mentored junior developers and conducted code reviews to ensure adherence to best practices and coding standards."
+            },
+            {
+                "jobTitle": "Software Developer",
+                "company": "Tech Innovations LLC",
+                "duration": "Jul 2016 - Dec 2019",
+                "description": "• Developed and maintained full-stack web applications using Python and Django.\n• Collaborated with product managers to translate business requirements into technical specifications.\n• Implemented automated testing procedures, reducing bug reports by 20%."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Science in Computer Science",
+                "institution": "Stanford University",
+                "year": "2019"
+            },
+            {
+                "degree": "Bachelor of Science in Software Engineering",
+                "institution": "University of California, Berkeley",
+                "year": "2016"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "John Smith",
+                "ref-title": "CTO, Innovate Solutions Inc.",
+                "ref-email": "john.smith@innovate.com",
+                "ref-phone": "+1 (987) 654-3210"
+            }
+        ]
+    },
+    {
+        "fullName": "Michael Chen",
+        "title": "Marketing Manager",
+        "email": "michael.chen@example.com",
+        "phone": "+1 (234) 567-8901",
+        "address": "456 Creative Ave, Marketing City, CA",
+        "linkedin": "https://linkedin.com/in/michaelchen",
+        "github": "",
+        "portfolio": "https://michaelchen.marketing",
+        "summary": "Dynamic and results-driven Marketing Manager with 7 years of experience in developing and executing successful marketing strategies. Proven ability to drive brand awareness, generate leads, and increase sales through innovative campaigns.",
+        "skills": "Digital Marketing, SEO/SEM, Content Creation, Social Media Management, Google Analytics, CRM, Market Research, Campaign Management",
+        "experience": [
+            {
+                "jobTitle": "Marketing Manager",
+                "company": "Global Brands Co.",
+                "duration": "Feb 2019 - Present",
+                "description": "• Developed and managed digital marketing campaigns across multiple channels, increasing online engagement by 40%.\n• Led a team of 3 marketing specialists, overseeing content creation and social media strategy.\n• Analyzed market trends and competitor activities to identify new opportunities and optimize campaign performance."
+            },
+            {
+                "jobTitle": "Marketing Coordinator",
+                "company": "Brand Innovations Ltd.",
+                "duration": "Mar 2016 - Jan 2019",
+                "description": "• Assisted in the planning and execution of marketing events and promotions.\n• Managed social media accounts, growing followers by 25% within one year.\n• Conducted market research and prepared reports on consumer behavior and preferences."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Business Administration (MBA)",
+                "institution": "University of Marketing Excellence",
+                "year": "2018"
+            },
+            {
+                "degree": "Bachelor of Arts in Marketing",
+                "institution": "State University of Business",
+                "year": "2016"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Sarah Lee",
+                "ref-title": "Director of Marketing, Global Brands Co.",
+                "ref-email": "sarah.lee@globalbrands.com",
+                "ref-phone": "+1 (345) 678-9012"
+            }
+        ]
+    },
+    {
+        "fullName": "Emily White",
+        "title": "UX/UI Designer",
+        "email": "emily.white@example.com",
+        "phone": "+1 (345) 678-9012",
+        "address": "789 Design Studio, Art City, NY",
+        "linkedin": "https://linkedin.com/in/emilywhite",
+        "github": "https://github.com/emilywhite",
+        "portfolio": "https://emilywhite.design",
+        "summary": "Creative and user-centered UX/UI Designer with 5 years of experience in crafting intuitive and engaging digital experiences. Proficient in user research, wireframing, prototyping, and visual design, with a strong focus on usability and accessibility.",
+        "skills": "User Research, Wireframing, Prototyping, Figma, Sketch, Adobe XD, Usability Testing, Information Architecture, Interaction Design, Visual Design",
+        "experience": [
+            {
+                "jobTitle": "UX/UI Designer",
+                "company": "Digital Innovations Agency",
+                "duration": "Apr 2020 - Present",
+                "description": "• Designed and prototyped user interfaces for web and mobile applications, improving user satisfaction by 20%.\n• Conducted user research, including interviews and usability testing, to inform design decisions.\n• Collaborated with development teams to ensure seamless implementation of designs."
+            },
+            {
+                "jobTitle": "Junior UI Designer",
+                "company": "Creative Solutions Group",
+                "duration": "May 2018 - Mar 2020",
+                "description": "• Assisted senior designers in creating wireframes and mockups for various projects.\n• Developed design systems and style guides to maintain brand consistency.\n• Participated in design sprints and brainstorming sessions."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Fine Arts in Graphic Design",
+                "institution": "School of Visual Arts",
+                "year": "2018"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "David Green",
+                "ref-title": "Creative Director, Digital Innovations Agency",
+                "ref-email": "david.green@digitalinnovations.com",
+                "ref-phone": "+1 (456) 789-0123"
+            }
+        ]
+    },
+    {
+        "fullName": "David Brown",
+        "title": "Data Scientist",
+        "email": "david.brown@example.com",
+        "phone": "+1 (456) 789-0123",
+        "address": "101 Data Drive, Analytics City, TX",
+        "linkedin": "https://linkedin.com/in/davidbrown",
+        "github": "https://github.com/davidbrown",
+        "portfolio": "",
+        "summary": "Analytical and detail-oriented Data Scientist with 6 years of experience in extracting insights from complex datasets. Proficient in statistical modeling, machine learning, and data visualization, with a proven ability to solve business problems through data-driven approaches.",
+        "skills": "Python (Pandas, NumPy, Scikit-learn), R, SQL, Machine Learning, Statistical Analysis, Data Visualization (Matplotlib, Seaborn), Big Data (Spark, Hadoop), A/B Testing",
+        "experience": [
+            {
+                "jobTitle": "Data Scientist",
+                "company": "Quant Insights Corp.",
+                "duration": "Jun 2019 - Present",
+                "description": "• Developed predictive models that improved customer churn prediction accuracy by 15%.\n• Performed extensive data analysis to identify key trends and provide actionable business recommendations.\n• Built interactive dashboards for stakeholders using Tableau and Power BI."
+            },
+            {
+                "jobTitle": "Junior Data Analyst",
+                "company": "Data Solutions Group",
+                "duration": "Aug 2017 - May 2019",
+                "description": "• Cleaned and preprocessed large datasets for analysis.\n• Assisted senior data scientists in model development and validation.\n• Generated weekly reports on key performance indicators."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Science in Data Science",
+                "institution": "University of Data Analytics",
+                "year": "2017"
+            },
+            {
+                "degree": "Bachelor of Science in Statistics",
+                "institution": "Central State University",
+                "year": "2015"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Dr. Anna Kim",
+                "ref-title": "Head of Data Science, Quant Insights Corp.",
+                "ref-email": "anna.kim@quantinsights.com",
+                "ref-phone": "+1 (567) 890-1234"
+            }
+        ]
+    },
+    {
+        "fullName": "Sophia Garcia",
+        "title": "Project Manager",
+        "email": "sophia.garcia@example.com",
+        "phone": "+1 (567) 890-1234",
+        "address": "222 Management Rd, Projectville, IL",
+        "linkedin": "https://linkedin.com/in/sophiagarcia",
+        "github": "",
+        "portfolio": "",
+        "summary": "Experienced and certified Project Manager with 9 years of success in leading complex projects from conception to completion. Adept at managing cross-functional teams, stakeholder communication, and ensuring on-time, within-budget delivery.",
+        "skills": "Project Management, Agile, Scrum, Waterfall, Risk Management, Budgeting, Stakeholder Management, Team Leadership, Jira, Confluence, Microsoft Project",
+        "experience": [
+            {
+                "jobTitle": "Project Manager",
+                "company": "Enterprise Solutions Inc.",
+                "duration": "Mar 2018 - Present",
+                "description": "• Managed a portfolio of 5+ concurrent software development projects, with budgets up to $2M.\n• Implemented Agile methodologies, improving team productivity by 25% and reducing time-to-market.\n• Facilitated communication between technical teams, clients, and senior management."
+            },
+            {
+                "jobTitle": "Assistant Project Manager",
+                "company": "Tech Innovations Group",
+                "duration": "Apr 2015 - Feb 2018",
+                "description": "• Supported project managers in planning, execution, and monitoring of projects.\n• Prepared project documentation, including schedules, budgets, and status reports.\n• Coordinated resources and managed project timelines."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Science in Project Management",
+                "institution": "Global Project Institute",
+                "year": "2015"
+            },
+            {
+                "degree": "Bachelor of Science in Business Administration",
+                "institution": "City Business School",
+                "year": "2013"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Robert Johnson",
+                "ref-title": "VP of Operations, Enterprise Solutions Inc.",
+                "ref-email": "robert.johnson@enterprise.com",
+                "ref-phone": "+1 (678) 901-2345"
+            }
+        ]
+    },
+    {
+        "fullName": "Daniel Lee",
+        "title": "Financial Analyst",
+        "email": "daniel.lee@example.com",
+        "phone": "+1 (678) 901-2345",
+        "address": "333 Finance St, Wall Street, NY",
+        "linkedin": "https://linkedin.com/in/daniellee",
+        "github": "",
+        "portfolio": "",
+        "summary": "Results-oriented Financial Analyst with 4 years of experience in financial modeling, forecasting, and reporting. Proven ability to provide insightful analysis to support strategic decision-making and improve financial performance.",
+        "skills": "Financial Modeling, Valuation, Forecasting, Budgeting, Excel, PowerPoint, Bloomberg Terminal, GAAP, Financial Reporting, Data Analysis",
+        "experience": [
+            {
+                "jobTitle": "Financial Analyst",
+                "company": "Capital Investments Group",
+                "duration": "Jul 2021 - Present",
+                "description": "• Developed complex financial models for investment opportunities, supporting decisions on over $50M in assets.\n• Prepared quarterly and annual financial reports for senior management and investors.\n• Conducted in-depth market research and competitive analysis to identify trends and risks."
+            },
+            {
+                "jobTitle": "Junior Financial Analyst",
+                "company": "Wealth Management Solutions",
+                "duration": "Aug 2019 - Jun 2021",
+                "description": "• Assisted in the preparation of financial statements and performance reports.\n• Performed data entry and maintained financial databases.\n• Supported senior analysts with ad-hoc financial analysis."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Science in Finance",
+                "institution": "New York University",
+                "year": "2019"
+            },
+            {
+                "degree": "Bachelor of Science in Economics",
+                "institution": "Columbia University",
+                "year": "2017"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Maria Rodriguez",
+                "ref-title": "Head of Finance, Capital Investments Group",
+                "ref-email": "maria.rodriguez@capitalinvest.com",
+                "ref-phone": "+1 (789) 012-3456"
+            }
+        ]
+    },
+    {
+        "fullName": "Olivia Taylor",
+        "title": "Registered Nurse",
+        "email": "olivia.taylor@example.com",
+        "phone": "+1 (789) 012-3456",
+        "address": "444 Health St, Medical City, FL",
+        "linkedin": "https://linkedin.com/in/oliviataylorrn",
+        "github": "",
+        "portfolio": "",
+        "summary": "Compassionate and highly skilled Registered Nurse with 6 years of experience in acute care settings. Dedicated to providing exceptional patient care, collaborating with multidisciplinary teams, and maintaining a safe and efficient healthcare environment.",
+        "skills": "Patient Care, Medication Administration, Electronic Health Records (EHR), IV Insertion, Wound Care, Critical Thinking, Communication, BLS, ACLS, Patient Education",
+        "experience": [
+            {
+                "jobTitle": "Registered Nurse",
+                "company": "City General Hospital",
+                "duration": "Sep 2019 - Present",
+                "description": "• Provided direct patient care to a diverse patient population in a fast-paced medical-surgical unit.\n• Administered medications, performed wound care, and monitored patient vital signs.\n• Collaborated with physicians and other healthcare professionals to develop and implement patient care plans."
+            },
+            {
+                "jobTitle": "Staff Nurse",
+                "company": "Community Health Clinic",
+                "duration": "Oct 2017 - Aug 2019",
+                "description": "• Assisted with patient assessments, screenings, and immunizations.\n• Educated patients and families on health conditions and treatment plans.\n• Maintained accurate and up-to-date patient records."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Science in Nursing (BSN)",
+                "institution": "University of Health Sciences",
+                "year": "2017"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Dr. James Wilson",
+                "ref-title": "Chief of Staff, City General Hospital",
+                "ref-email": "james.wilson@cityhospital.com",
+                "ref-phone": "+1 (890) 123-4567"
+            }
+        ]
+    },
+    {
+        "fullName": "William Green",
+        "title": "Civil Engineer",
+        "email": "william.green@example.com",
+        "phone": "+1 (890) 123-4567",
+        "address": "555 Construction Blvd, Builderville, GA",
+        "linkedin": "https://linkedin.com/in/williamgreen",
+        "github": "",
+        "portfolio": "https://williamgreen.engineering",
+        "summary": "Licensed Civil Engineer with 8 years of experience in designing, managing, and overseeing infrastructure projects. Proficient in structural analysis, project planning, and construction supervision, with a strong commitment to safety and quality.",
+        "skills": "Structural Analysis, AutoCAD, Civil 3D, Project Management, Construction Supervision, Geotechnical Engineering, Hydrology, Environmental Engineering, Feasibility Studies, Cost Estimation",
+        "experience": [
+            {
+                "jobTitle": "Civil Engineer",
+                "company": "MegaBuild Engineering",
+                "duration": "Nov 2018 - Present",
+                "description": "• Designed and managed civil infrastructure projects, including roads, bridges, and water systems, valued up to $10M.\n• Conducted site inspections and ensured compliance with engineering standards and regulations.\n• Collaborated with architects, contractors, and government agencies."
+            },
+            {
+                "jobTitle": "Junior Civil Engineer",
+                "company": "Urban Development Group",
+                "duration": "Dec 2016 - Oct 2018",
+                "description": "• Assisted in the preparation of engineering drawings and specifications.\n• Performed calculations for structural design and material quantities.\n• Supported project managers in various administrative tasks."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Science in Civil Engineering",
+                "institution": "Georgia Institute of Technology",
+                "year": "2016"
+            },
+            {
+                "degree": "Bachelor of Science in Civil Engineering",
+                "institution": "Clemson University",
+                "year": "2014"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Dr. Susan Davis",
+                "ref-title": "Head of Engineering, MegaBuild Engineering",
+                "ref-email": "susan.davis@megabuild.com",
+                "ref-phone": "+1 (901) 234-5678"
+            }
+        ]
+    },
+    {
+        "fullName": "Ava Martinez",
+        "title": "Content Writer",
+        "email": "ava.martinez@example.com",
+        "phone": "+1 (901) 234-5678",
+        "address": "666 Storyteller Lane, Narrative City, WA",
+        "linkedin": "https://linkedin.com/in/avamartinez",
+        "github": "",
+        "portfolio": "https://avamartinez.writer",
+        "summary": "Versatile and creative Content Writer with 3 years of experience in producing engaging and SEO-friendly content for various platforms. Skilled in crafting compelling narratives, conducting thorough research, and adapting writing style to different audiences.",
+        "skills": "Content Writing, SEO, Copywriting, Blogging, Article Writing, Editing, Proofreading, WordPress, Keyword Research, Social Media Content, Storytelling",
+        "experience": [
+            {
+                "jobTitle": "Content Writer",
+                "company": "Digital Content Hub",
+                "duration": "Jan 2022 - Present",
+                "description": "• Wrote and edited over 150 articles, blog posts, and website content pieces, increasing organic traffic by 30%.\n• Collaborated with marketing team to develop content strategies aligned with business goals.\n• Conducted keyword research and optimized content for search engine visibility."
+            },
+            {
+                "jobTitle": "Freelance Writer",
+                "company": "Self-Employed",
+                "duration": "Mar 2021 - Dec 2021",
+                "description": "• Provided writing services to various clients across different industries.\n• Developed a portfolio of diverse writing samples, including technical articles and creative stories.\n• Managed client communications and project deadlines."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Arts in Journalism",
+                "institution": "University of Creative Arts",
+                "year": "2021"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Chris Evans",
+                "ref-title": "Content Director, Digital Content Hub",
+                "ref-email": "chris.evans@digitalcontent.com",
+                "ref-phone": "+1 (012) 345-6789"
+            }
+        ]
+    },
+    {
+        "fullName": "Noah Wilson",
+        "title": "Accountant",
+        "email": "noah.wilson@example.com",
+        "phone": "+1 (012) 345-6789",
+        "address": "777 Ledger Lane, Accountsville, OH",
+        "linkedin": "https://linkedin.com/in/noahwilson",
+        "github": "",
+        "portfolio": "",
+        "summary": "Diligent and accurate Accountant with 5 years of experience in financial record-keeping, reconciliation, and tax preparation. Proficient in accounting software and committed to maintaining financial integrity and compliance.",
+        "skills": "Bookkeeping, Financial Statements, General Ledger, Accounts Payable/Receivable, Payroll, Tax Preparation, QuickBooks, SAP, Microsoft Excel, Auditing",
+        "experience": [
+            {
+                "jobTitle": "Accountant",
+                "company": "Precision Accounting Firm",
+                "duration": "Apr 2020 - Present",
+                "description": "• Managed full-cycle accounting operations for multiple clients, ensuring accuracy and compliance.\n• Prepared monthly, quarterly, and annual financial statements and reports.\n• Reconciled bank statements and general ledger accounts, identifying and resolving discrepancies."
+            },
+            {
+                "jobTitle": "Junior Accountant",
+                "company": "Local Business Solutions",
+                "duration": "May 2018 - Mar 2020",
+                "description": "• Assisted with data entry, invoice processing, and payroll administration.\n• Supported senior accountants in preparing tax returns and financial audits.\n• Maintained organized financial records and documentation."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Science in Accounting",
+                "institution": "State University of Accounting",
+                "year": "2018"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Jessica Brown",
+                "ref-title": "Senior Partner, Precision Accounting Firm",
+                "ref-email": "jessica.brown@precisionacc.com",
+                "ref-phone": "+1 (123) 456-7890"
+            }
+        ]
+    },
+    {
+        "fullName": "Isabella Hall",
+        "title": "Graphic Designer",
+        "email": "isabella.hall@example.com",
+        "phone": "+1 (234) 567-8901",
+        "address": "888 Canvas St, Creative City, CA",
+        "linkedin": "https://linkedin.com/in/isabellahall",
+        "github": "",
+        "portfolio": "https://isabellahall.design",
+        "summary": "Innovative Graphic Designer with 4 years of experience in creating visually compelling designs for print and digital media. Proficient in Adobe Creative Suite and passionate about translating client visions into impactful visual solutions.",
+        "skills": "Adobe Photoshop, Adobe Illustrator, Adobe InDesign, Branding, Logo Design, Typography, Print Design, Web Design, UI/UX Principles, Photography",
+        "experience": [
+            {
+                "jobTitle": "Graphic Designer",
+                "company": "Visual Impact Studio",
+                "duration": "Jul 2021 - Present",
+                "description": "• Designed logos, brochures, websites, and marketing materials for diverse clients, enhancing brand recognition.\n• Collaborated with marketing and content teams to ensure visual consistency across all platforms.\n• Managed multiple design projects from concept to completion, meeting tight deadlines."
+            },
+            {
+                "jobTitle": "Junior Graphic Designer",
+                "company": "Creative Spark Agency",
+                "duration": "Aug 2019 - Jun 2021",
+                "description": "• Assisted senior designers in developing design concepts and preparing presentations.\n• Created social media graphics and website banners.\n• Participated in client meetings and design reviews."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Fine Arts in Graphic Design",
+                "institution": "Art Institute of California",
+                "year": "2019"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Mark Davis",
+                "ref-title": "Art Director, Visual Impact Studio",
+                "ref-email": "mark.davis@visualimpact.com",
+                "ref-phone": "+1 (345) 678-9012"
+            }
+        ]
+    },
+    {
+        "fullName": "James King",
+        "title": "Sales Manager",
+        "email": "james.king@example.com",
+        "phone": "+1 (345) 678-9012",
+        "address": "999 Sales Drive, Commerce City, TX",
+        "linkedin": "https://linkedin.com/in/jamesking",
+        "github": "",
+        "portfolio": "",
+        "summary": "Dynamic and results-driven Sales Manager with 10 years of experience in leading high-performing sales teams and exceeding revenue targets. Proven ability to develop and implement effective sales strategies, foster client relationships, and drive business growth.",
+        "skills": "Sales Management, Business Development, Account Management, CRM (Salesforce), Negotiation, Sales Forecasting, Team Leadership, Client Relationship Management, Presentation Skills, Strategic Planning",
+        "experience": [
+            {
+                "jobTitle": "Sales Manager",
+                "company": "Revenue Growth Solutions",
+                "duration": "Oct 2017 - Present",
+                "description": "• Led a team of 10 sales representatives, consistently exceeding quarterly sales targets by an average of 15%.\n• Developed and implemented new sales strategies that resulted in a 20% increase in market share.\n• Built and maintained strong relationships with key clients, leading to repeat business and referrals."
+            },
+            {
+                "jobTitle": "Senior Sales Executive",
+                "company": "Market Leaders Inc.",
+                "duration": "Nov 2013 - Sep 2017",
+                "description": "• Managed a portfolio of enterprise accounts, achieving 120% of individual sales quota annually.\n• Identified and pursued new business opportunities, expanding client base by 30%.\n• Conducted product demonstrations and presented solutions to prospective clients."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Business Administration",
+                "institution": "University of Business & Sales",
+                "year": "2013"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Laura Miller",
+                "ref-title": "VP of Sales, Revenue Growth Solutions",
+                "ref-email": "laura.miller@revenuegrowth.com",
+                "ref-phone": "+1 (456) 789-0123"
+            }
+        ]
+    },
+    {
+        "fullName": "Charlotte Wright",
+        "title": "Research Scientist",
+        "email": "charlotte.wright@example.com",
+        "phone": "+1 (456) 789-0123",
+        "address": "111 Lab Lane, Science City, MA",
+        "linkedin": "https://linkedin.com/in/charlottewright",
+        "github": "",
+        "portfolio": "",
+        "summary": "Dedicated and meticulous Research Scientist with 7 years of experience in conducting scientific research and analysis. Proficient in experimental design, data interpretation, and scientific writing, with a strong background in molecular biology.",
+        "skills": "Molecular Biology, Cell Culture, PCR, Western Blot, ELISA, Data Analysis, Statistical Software (R, SPSS), Scientific Writing, Grant Writing, Laboratory Management",
+        "experience": [
+            {
+                "jobTitle": "Research Scientist",
+                "company": "BioTech Innovations",
+                "duration": "Aug 2018 - Present",
+                "description": "• Designed and executed experiments to investigate novel therapeutic targets, leading to 3 peer-reviewed publications.\n• Analyzed complex biological data using statistical software and presented findings at national conferences.\n• Managed laboratory equipment and ensured compliance with safety regulations."
+            },
+            {
+                "jobTitle": "Postdoctoral Researcher",
+                "company": "University Research Institute",
+                "duration": "Sep 2016 - Jul 2018",
+                "description": "• Conducted independent research on disease mechanisms, contributing to a major breakthrough in drug discovery.\n• Mentored graduate students and collaborated with interdisciplinary research teams.\n• Prepared research proposals and secured grant funding."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Ph.D. in Molecular Biology",
+                "institution": "Harvard University",
+                "year": "2016"
+            },
+            {
+                "degree": "Bachelor of Science in Biology",
+                "institution": "Massachusetts Institute of Technology",
+                "year": "2012"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Dr. Michael Lee",
+                "ref-title": "Head of Research, BioTech Innovations",
+                "ref-email": "michael.lee@biotech.com",
+                "ref-phone": "+1 (567) 890-1234"
+            }
+        ]
+    },
+    {
+        "fullName": "Benjamin Hill",
+        "title": "Teacher",
+        "email": "benjamin.hill@example.com",
+        "phone": "+1 (567) 890-1234",
+        "address": "222 Schoolhouse Rd, Education Town, CA",
+        "linkedin": "https://linkedin.com/in/benjaminhill",
+        "github": "",
+        "portfolio": "",
+        "summary": "Passionate and dedicated Teacher with 6 years of experience in fostering a positive and engaging learning environment. Skilled in curriculum development, classroom management, and differentiated instruction to meet diverse student needs.",
+        "skills": "Curriculum Development, Classroom Management, Differentiated Instruction, Lesson Planning, Student Assessment, Parent Communication, Educational Technology, Special Education, Public Speaking, Mentoring",
+        "experience": [
+            {
+                "jobTitle": "High School Teacher (Mathematics)",
+                "company": "Central High School",
+                "duration": "Aug 2019 - Present",
+                "description": "• Taught Algebra I and Geometry to diverse student populations, achieving a 90% pass rate on state exams.\n• Developed and implemented engaging lesson plans that incorporated technology and real-world applications.\n• Provided individualized support to students, resulting in improved academic performance."
+            },
+            {
+                "jobTitle": "Middle School Teacher (Science)",
+                "company": "Community Middle School",
+                "duration": "Sep 2017 - Jul 2019",
+                "description": "• Instructed 7th and 8th-grade science classes, fostering a love for scientific inquiry.\n• Managed classroom behavior and created a safe and inclusive learning space.\n• Collaborated with colleagues to develop interdisciplinary projects."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Education (M.Ed.)",
+                "institution": "Teachers College, Columbia University",
+                "year": "2017"
+            },
+            {
+                "degree": "Bachelor of Science in Education",
+                "institution": "University of Education",
+                "year": "2015"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Principal Susan Clark",
+                "ref-title": "Principal, Central High School",
+                "ref-email": "susan.clark@centralhigh.edu",
+                "ref-phone": "+1 (678) 901-2345"
+            }
+        ]
+    },
+    {
+        "fullName": "Mia Adams",
+        "title": "Human Resources Manager",
+        "email": "mia.adams@example.com",
+        "phone": "+1 (678) 901-2345",
+        "address": "333 HR Plaza, Talent City, TX",
+        "linkedin": "https://linkedin.com/in/miaadams",
+        "github": "",
+        "portfolio": "",
+        "summary": "Strategic and empathetic Human Resources Manager with 8 years of experience in talent acquisition, employee relations, and HR policy development. Proven ability to foster a positive work environment and support organizational growth.",
+        "skills": "Talent Acquisition, Employee Relations, HR Policies, Performance Management, Compensation & Benefits, HRIS (Workday, SAP SuccessFactors), Conflict Resolution, Training & Development, Compliance, Onboarding",
+        "experience": [
+            {
+                "jobTitle": "Human Resources Manager",
+                "company": "People Solutions Corp.",
+                "duration": "Feb 2019 - Present",
+                "description": "• Managed full-cycle recruitment for all departments, reducing time-to-hire by 20%.\n• Developed and implemented new HR policies and procedures, ensuring compliance with labor laws.\n• Provided guidance and support to employees and management on HR-related matters."
+            },
+            {
+                "jobTitle": "HR Generalist",
+                "company": "Growth Innovations Inc.",
+                "duration": "Mar 2016 - Jan 2019",
+                "description": "• Administered employee benefits programs and managed payroll processing.\n• Conducted new hire orientations and managed onboarding processes.\n• Assisted in resolving employee grievances and disciplinary issues."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Science in Human Resources Management",
+                "institution": "University of Human Capital",
+                "year": "2016"
+            },
+            {
+                "degree": "Bachelor of Arts in Psychology",
+                "institution": "State University of Psychology",
+                "year": "2014"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Thomas Wilson",
+                "ref-title": "VP of Operations, People Solutions Corp.",
+                "ref-email": "thomas.wilson@peoplesolutions.com",
+                "ref-phone": "+1 (789) 012-3456"
+            }
+        ]
+    },
+    {
+        "fullName": "Ethan Baker",
+        "title": "Chef",
+        "email": "ethan.baker@example.com",
+        "phone": "+1 (789) 012-3456",
+        "address": "444 Culinary Lane, Gastronomy City, CA",
+        "linkedin": "https://linkedin.com/in/ethanbakerchef",
+        "github": "",
+        "portfolio": "",
+        "summary": "Innovative and passionate Chef with 12 years of experience in fine dining and culinary arts. Proven ability to create exceptional menus, manage kitchen operations, and lead culinary teams to deliver outstanding dining experiences.",
+        "skills": "Menu Development, Culinary Arts, Kitchen Management, Food Safety, Inventory Management, Team Leadership, Fine Dining, Pastry, Butchery, Cost Control",
+        "experience": [
+            {
+                "jobTitle": "Head Chef",
+                "company": "The Gourmet Bistro",
+                "duration": "Jan 2018 - Present",
+                "description": "• Designed and executed seasonal menus, resulting in a 25% increase in customer satisfaction scores.\n• Managed all kitchen operations, including staffing, inventory, and quality control.\n• Led and mentored a team of 15 culinary professionals, fostering a collaborative and high-performance environment."
+            },
+            {
+                "jobTitle": "Sous Chef",
+                "company": "Elegance Restaurant",
+                "duration": "Feb 2014 - Dec 2017",
+                "description": "• Assisted the Head Chef in daily kitchen operations and menu planning.\n• Supervised food preparation and ensured adherence to recipes and quality standards.\n• Trained and onboarded new kitchen staff."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Associate of Occupational Studies in Culinary Arts",
+                "institution": "Culinary Institute of America",
+                "year": "2012"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Chef Gordon Ramsay",
+                "ref-title": "Owner, Ramsay Restaurants",
+                "ref-email": "gordon.ramsay@example.com",
+                "ref-phone": "+1 (890) 123-4567"
+            }
+        ]
+    },
+    {
+        "fullName": "Chloe Campbell",
+        "title": "Marketing Specialist",
+        "email": "chloe.campbell@example.com",
+        "phone": "+1 (890) 123-4567",
+        "address": "555 Brand Blvd, Ad Agency, NY",
+        "linkedin": "https://linkedin.com/in/chloecampbell",
+        "github": "",
+        "portfolio": "https://chloecampbell.marketing",
+        "summary": "Creative and analytical Marketing Specialist with 3 years of experience in developing and executing digital marketing campaigns. Proficient in content creation, social media management, and SEO, with a passion for driving brand engagement.",
+        "skills": "Digital Marketing, Social Media Marketing, Content Marketing, SEO, Email Marketing, Google Analytics, HubSpot, Canva, Copywriting, Campaign Optimization",
+        "experience": [
+            {
+                "jobTitle": "Marketing Specialist",
+                "company": "Innovate Marketing Agency",
+                "duration": "Jan 2022 - Present",
+                "description": "• Managed social media presence for 5+ clients, increasing engagement rates by an average of 35%.\n• Developed and executed email marketing campaigns, resulting in a 15% increase in open rates.\n• Conducted SEO audits and implemented on-page optimization strategies."
+            },
+            {
+                "jobTitle": "Marketing Intern",
+                "company": "Startup Growth Hub",
+                "duration": "Sep 2021 - Dec 2021",
+                "description": "• Assisted in content creation for blog posts and social media.\n• Conducted market research and competitive analysis.\n• Supported the marketing team with administrative tasks."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Science in Marketing",
+                "institution": "New York University",
+                "year": "2021"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Daniel Kim",
+                "ref-title": "Marketing Director, Innovate Marketing Agency",
+                "ref-email": "daniel.kim@innovatemarketing.com",
+                "ref-phone": "+1 (901) 234-5678"
+            }
+        ]
+    },
+    {
+        "fullName": "Liam Parker",
+        "title": "Architect",
+        "email": "liam.parker@example.com",
+        "phone": "+1 (901) 234-5678",
+        "address": "666 Blueprint Blvd, Design City, IL",
+        "linkedin": "https://linkedin.com/in/liamparkerarchitect",
+        "github": "",
+        "portfolio": "https://liamparker.architecture",
+        "summary": "Licensed Architect with 9 years of experience in designing and managing diverse architectural projects. Proficient in sustainable design principles, building codes, and project coordination, with a strong focus on innovative and functional spaces.",
+        "skills": "Architectural Design, AutoCAD, Revit, SketchUp, Sustainable Design, Building Codes, Project Management, Construction Documentation, Client Management, Urban Planning",
+        "experience": [
+            {
+                "jobTitle": "Architect",
+                "company": "Modern Spaces Architects",
+                "duration": "Mar 2018 - Present",
+                "description": "• Led the design and development of residential and commercial projects, from conceptualization to construction administration.\n• Integrated sustainable design strategies, achieving LEED certification for 3 projects.\n• Collaborated with clients, engineers, and contractors to ensure project success."
+            },
+            {
+                "jobTitle": "Architectural Designer",
+                "company": "Urban Design Collective",
+                "duration": "Apr 2015 - Feb 2018",
+                "description": "• Prepared architectural drawings, renderings, and presentations for various projects.\n• Assisted in site analysis, feasibility studies, and material selection.\n• Participated in client meetings and design reviews."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Master of Architecture (M.Arch)",
+                "institution": "Illinois Institute of Technology",
+                "year": "2015"
+            },
+            {
+                "degree": "Bachelor of Science in Architectural Studies",
+                "institution": "University of Illinois Urbana-Champaign",
+                "year": "2013"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Sophia Davis",
+                "ref-title": "Principal Architect, Modern Spaces Architects",
+                "ref-email": "sophia.davis@modernspaces.com",
+                "ref-phone": "+1 (012) 345-6789"
+            }
+        ]
+    },
+    {
+        "fullName": "Grace Miller",
+        "title": "Marketing Coordinator",
+        "email": "grace.miller@example.com",
+        "phone": "+1 (012) 345-6789",
+        "address": "777 Campaign St, Brandville, GA",
+        "linkedin": "https://linkedin.com/in/gracemiller",
+        "github": "",
+        "portfolio": "",
+        "summary": "Enthusiastic and detail-oriented Marketing Coordinator with 2 years of experience in supporting marketing initiatives. Skilled in content creation, social media management, and event coordination, with a strong desire to contribute to successful campaigns.",
+        "skills": "Social Media Management, Content Creation, Email Marketing, Event Planning, Market Research, Google Analytics, Canva, Mailchimp, Copywriting, Public Relations",
+        "experience": [
+            {
+                "jobTitle": "Marketing Coordinator",
+                "company": "Brand Builders Agency",
+                "duration": "Jan 2023 - Present",
+                "description": "• Managed social media content calendars and posted daily across platforms, increasing engagement by 20%.\n• Assisted in the creation of email newsletters and promotional materials.\n• Coordinated logistics for virtual and in-person marketing events."
+            },
+            {
+                "jobTitle": "Marketing Intern",
+                "company": "Creative Solutions Co.",
+                "duration": "Sep 2022 - Dec 2022",
+                "description": "• Supported the marketing team with administrative tasks and data entry.\n• Conducted competitive analysis and reported on industry trends.\n• Assisted in organizing promotional giveaways and contests."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Arts in Communications",
+                "institution": "University of Georgia",
+                "year": "2022"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Olivia White",
+                "ref-title": "Marketing Manager, Brand Builders Agency",
+                "ref-email": "olivia.white@brandbuilders.com",
+                "ref-phone": "+1 (123) 456-7890"
+            }
+        ]
+    },
+    {
+        "fullName": "Noah Davis",
+        "title": "Software Developer Intern",
+        "email": "noah.davis@example.com",
+        "phone": "+1 (111) 222-3333",
+        "address": "123 Intern St, Dev City, CA",
+        "linkedin": "https://linkedin.com/in/noahdavis",
+        "github": "https://github.com/noahdavis",
+        "portfolio": "",
+        "summary": "Enthusiastic and quick-learning Software Developer Intern seeking to apply foundational programming skills and a passion for technology to real-world projects. Eager to contribute to a dynamic team and grow expertise in software development.",
+        "skills": "Python, Java, HTML, CSS, JavaScript, Git, Data Structures, Algorithms, Problem Solving, Team Collaboration",
+        "experience": [
+            {
+                "jobTitle": "Software Developer Intern",
+                "company": "Innovate Tech Solutions",
+                "duration": "May 2024 - Aug 2024",
+                "description": "• Assisted senior developers in debugging and testing web applications.\n• Wrote clean and efficient code for front-end components using HTML, CSS, and JavaScript.\n• Participated in daily stand-ups and contributed to team discussions."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Bachelor of Science in Computer Science (Expected 2026)",
+                "institution": "University of Technology",
+                "year": "2026"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Dr. Emily Johnson",
+                "ref-title": "Professor of Computer Science, University of Technology",
+                "ref-email": "emily.johnson@techuni.edu",
+                "ref-phone": "+1 (222) 333-4444"
+            }
+        ]
+    },
+    {
+        "fullName": "Sophie Turner",
+        "title": "Customer Service Representative",
+        "email": "sophie.turner@example.com",
+        "phone": "+1 (222) 333-4444",
+        "address": "456 Support Ave, Service Town, FL",
+        "linkedin": "https://linkedin.com/in/sophieturner",
+        "github": "",
+        "portfolio": "",
+        "summary": "Customer-focused and empathetic Customer Service Representative with 4 years of experience in providing exceptional support and resolving customer inquiries. Skilled in communication, problem-solving, and maintaining positive client relationships.",
+        "skills": "Customer Support, Conflict Resolution, CRM Software, Data Entry, Communication, Problem Solving, Active Listening, Product Knowledge, Teamwork, Time Management",
+        "experience": [
+            {
+                "jobTitle": "Customer Service Representative",
+                "company": "Global Support Services",
+                "duration": "Mar 2021 - Present",
+                "description": "• Handled an average of 80-100 customer inquiries daily via phone, email, and chat, achieving a 95% customer satisfaction rate.\n• Resolved complex customer issues efficiently and effectively, escalating when necessary.\n• Provided product information and guided customers through troubleshooting steps."
+            },
+            {
+                "jobTitle": "Retail Associate",
+                "company": "Local Retail Store",
+                "duration": "Apr 2019 - Feb 2021",
+                "description": "• Assisted customers with product selection and purchases.\n• Processed transactions and managed cash handling.\n• Maintained a clean and organized sales floor."
+            }
+        ],
+        "education": [
+            {
+                "degree": "High School Diploma",
+                "institution": "Community High School",
+                "year": "2019"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Mr. Robert Green",
+                "ref-title": "Team Lead, Global Support Services",
+                "ref-email": "robert.green@globalsupport.com",
+                "ref-phone": "+1 (333) 444-5555"
+            }
+        ]
+    },
+    {
+        "fullName": "Jack Robinson",
+        "title": "Electrician",
+        "email": "jack.robinson@example.com",
+        "phone": "+1 (333) 444-5555",
+        "address": "789 Wire Way, Spark City, TX",
+        "linkedin": "https://linkedin.com/in/jackrobinson",
+        "github": "",
+        "portfolio": "",
+        "summary": "Certified Electrician with 7 years of experience in installing, maintaining, and repairing electrical systems. Proficient in troubleshooting, adhering to safety regulations, and ensuring efficient electrical operations for residential and commercial clients.",
+        "skills": "Electrical Installation, Troubleshooting, Wiring, Circuitry, Blueprint Reading, National Electrical Code (NEC), Safety Regulations, Maintenance, Repair, Power Distribution",
+        "experience": [
+            {
+                "jobTitle": "Journeyman Electrician",
+                "company": "PowerUp Electrical Services",
+                "duration": "Jun 2019 - Present",
+                "description": "• Installed and maintained electrical systems in residential and commercial buildings, ensuring compliance with NEC.\n• Diagnosed and repaired electrical malfunctions, reducing downtime by 20%.\n• Supervised apprentice electricians and provided on-the-job training."
+            },
+            {
+                "jobTitle": "Apprentice Electrician",
+                "company": "Volt Solutions Inc.",
+                "duration": "Jul 2017 - May 2019",
+                "description": "• Assisted journeyman electricians with installations and repairs.\n• Learned to read blueprints and schematics.\n• Maintained tools and equipment, ensuring a safe work environment."
+            }
+        ],
+        "education": [
+            {
+                "degree": "Certificate in Electrical Technology",
+                "institution": "Technical College of America",
+                "year": "2017"
+            },
+            {
+                "degree": "High School Diploma",
+                "institution": "City High School",
+                "year": "2015"
+            }
+        ],
+        "references": [
+            {
+                "ref-name": "Mr. Frank White",
+                "ref-title": "Owner, PowerUp Electrical Services",
+                "ref-email": "frank.white@powerup.com",
+                "ref-phone": "+1 (444) 555-6666"
+            }
+        ]
+    }
+]

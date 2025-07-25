@@ -54,6 +54,15 @@
             display: flex;
             align-items: center;
             gap: 8px;
+            cursor: pointer; /* Indicate clickable */
+        }
+
+        /* Style for editable content */
+        [contenteditable="true"] {
+            border: 1px dashed #ccc;
+            padding: 2px 5px;
+            outline: none;
+            background-color: #f9f9f9;
         }
 
         .form-group {
@@ -208,20 +217,40 @@
         .template-modern .header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 30px;
+            padding: 40px;
             margin: -40px -40px 30px -40px;
+            text-align: center;
         }
 
         .template-modern .header h1 {
-            font-size: 32px;
+            font-size: 36px;
             margin-bottom: 10px;
         }
 
         .template-modern .header .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
             font-size: 14px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-right: 20px; /* Add space between items */
+            margin-bottom: 10px; /* Add space for wrapping */
+        }
+
+        .contact-item a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
         }
 
         .template-modern .section {
@@ -231,9 +260,9 @@
         .template-modern .section h2 {
             color: #667eea;
             border-bottom: 2px solid #667eea;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            font-size: 20px;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            font-size: 22px;
         }
 
         .template-modern .experience-item, .template-modern .education-item {
@@ -250,118 +279,180 @@
             border-bottom: 3px solid #333;
             padding-bottom: 20px;
             margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .template-professional .header h1 {
-            font-size: 28px;
+            font-size: 32px;
             color: #333;
             margin-bottom: 10px;
+        }
+
+        .template-professional .contact-info {
+            text-align: right;
         }
 
         .template-professional .section h2 {
             background: #333;
             color: white;
-            padding: 8px 15px;
-            margin-bottom: 15px;
-            font-size: 16px;
+            padding: 10px 15px;
+            margin-bottom: 20px;
+            font-size: 18px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
         .template-creative .header {
             background: #f8f9fa;
-            padding: 30px;
+            padding: 40px;
             margin: -40px -40px 30px -40px;
-            border-left: 8px solid #28a745;
+            border-left: 10px solid #28a745;
+            position: relative;
         }
 
         .template-creative .header h1 {
-            font-size: 30px;
+            font-size: 34px;
             color: #333;
             margin-bottom: 10px;
         }
 
+        .template-creative .contact-info {
+            margin-top: 20px;
+        }
+
         .template-creative .section h2 {
             color: #28a745;
-            font-size: 22px;
-            margin-bottom: 15px;
+            font-size: 24px;
+            margin-bottom: 20px;
             position: relative;
+            display: inline-block;
         }
 
         .template-creative .section h2::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: -8px;
             left: 0;
-            width: 50px;
-            height: 3px;
+            width: 70%;
+            height: 4px;
             background: #28a745;
         }
 
         .template-minimalist {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            line-height: 1.5;
+            line-height: 1.6;
         }
         .template-minimalist .header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
         .template-minimalist .header h1 {
-            font-size: 28px;
-            font-weight: 300;
-            letter-spacing: 2px;
+            font-size: 30px;
+            font-weight: 200;
+            letter-spacing: 3px;
+        }
+        .template-minimalist .contact-info {
+            margin-top: 20px;
+            font-size: 14px;
         }
         .template-minimalist .section h2 {
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 400;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 8px;
-            margin-bottom: 15px;
+            letter-spacing: 2px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .template-technical {
             font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
         }
         .template-technical .header {
-            padding-bottom: 10px;
-            margin-bottom: 20px;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333;
         }
         .template-technical .header h1 {
-            font-size: 24px;
+            font-size: 26px;
         }
         .template-technical .section {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
         .template-technical .section h2 {
             font-size: 18px;
             background: #eee;
-            padding: 5px 10px;
+            padding: 8px 12px;
             font-weight: bold;
+            margin-bottom: 15px;
         }
         .template-technical .skill-tag {
             background: #ddd;
             border-radius: 4px;
-            padding: 3px 8px;
+            padding: 4px 10px;
+            font-size: 13px;
         }
 
         .template-academic {
             font-family: 'Times New Roman', Times, serif;
+            font-size: 12pt;
         }
-        .template-academic .header {
-            text-align: center;
-            margin-bottom: 30px;
+
+        .academic-container {
+            display: flex;
         }
+
+        .left-column {
+            width: 35%;
+            padding-right: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        .right-column {
+            width: 65%;
+            padding-left: 20px;
+        }
+
+        .template-academic .profile-photo {
+            width: 100%;
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .template-academic .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .template-academic .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .template-academic .skills-list li {
+            margin-bottom: 5px;
+        }
+
+        .template-academic .header h1 {
+            font-size: 28pt;
+            margin-bottom: 10px;
+        }
+
         .template-academic .section h2 {
-            font-size: 20px;
+            font-size: 16pt;
             font-weight: bold;
-            border-bottom: 1px solid #000;
+            color: #333;
+            border-bottom: 2px solid #333;
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
-        .template-academic .education-item h3 {
-            font-weight: bold;
+
+        .template-academic .experience-item ul {
+            padding-left: 20px;
         }
 
         .template-corporate {
@@ -369,18 +460,20 @@
         }
         .template-corporate .header {
             background: #f2f2f2;
-            padding: 20px;
-            margin: -40px -40px 20px -40px;
+            padding: 30px;
+            margin: -40px -40px 30px -40px;
         }
         .template-corporate .header h1 {
             color: #005a9e;
+            font-size: 32px;
         }
         .template-corporate .section h2 {
             color: #005a9e;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             border-bottom: 2px solid #005a9e;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
         }
 
         .template-elegant {
@@ -388,24 +481,26 @@
         }
         .template-elegant .header {
             text-align: center;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
             border-bottom: 1px solid #ddd;
-            margin-bottom: 30px;
+            margin-bottom: 35px;
         }
         .template-elegant .header h1 {
-            font-size: 34px;
+            font-size: 36px;
             font-weight: normal;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
         }
         .template-elegant .section h2 {
-            font-size: 20px;
+            font-size: 22px;
             text-align: center;
             font-style: italic;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
         }
         .template-elegant .skill-tag {
             background: none;
             border: 1px solid #ccc;
+            padding: 6px 14px;
         }
 
         .template-bold {
@@ -414,25 +509,29 @@
         .template-bold .header {
             background: #333;
             color: white;
-            padding: 40px;
+            padding: 50px 40px;
             margin: -40px -40px 30px -40px;
             text-align: center;
         }
         .template-bold .header h1 {
-            font-size: 36px;
+            font-size: 40px;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
         .template-bold .section h2 {
-            font-size: 22px;
+            font-size: 24px;
             text-transform: uppercase;
             color: #333;
             border-bottom: 3px solid #333;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
         }
         .template-bold .skill-tag {
             background: #333;
             color: white;
             border-radius: 0;
+            padding: 8px 16px;
+            font-size: 14px;
         }
 
         .template-minimalist .profile-photo,
@@ -793,11 +892,12 @@
         }
 
         .template-academic .profile-photo {
-            width: 100px;
-            height: 120px;
+            width: 100%;
+            max-width: 150px; /* Adjust as needed */
+            height: auto;
             object-fit: cover;
-            float: right;
-            margin-left: 20px;
+            margin-bottom: 20px;
+            display: block; /* Ensure it takes up full width of its container */
         }
 
         .template-corporate .profile-photo {

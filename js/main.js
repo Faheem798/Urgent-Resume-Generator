@@ -3,6 +3,8 @@
         let enhancementTarget = null;
         let enhancementElement = null;
         let profilePhotoDataURL = null;
+        let allDummyProfiles = []; // To store all profiles from seeder.json
+        let currentProfileIndex = 0; // To keep track of the current profile to inject
 
         // Initialize the app
         document.addEventListener('DOMContentLoaded', function() {
@@ -21,24 +23,37 @@
 
         // Update resume preview
         function updatePreview() {
+            if (currentTemplate === 'academic') {
+                updateAcademicPreview();
+                return;
+            }
+
             const preview = document.getElementById('resume-preview');
             const fullName = document.getElementById('fullName').value || 'Your Name';
             const title = document.getElementById('title').value || 'Your Professional Title';
             const email = document.getElementById('email').value || 'email@example.com';
             const phone = document.getElementById('phone').value || 'Phone Number';
-            const location = document.getElementById('location').value || 'Location';
+            const address = document.getElementById('address').value || 'Address';
             const linkedin = document.getElementById('linkedin').value || '';
+            const github = document.getElementById('github').value || '';
+            const portfolio = document.getElementById('portfolio').value || '';
             const summary = document.getElementById('summary').value || 'Professional summary will appear here...';
             const skills = document.getElementById('skills').value || '';
 
             // Contact info
             let contactInfo = `
-                <span><i class="fas fa-envelope"></i> ${email}</span>
-                <span><i class="fas fa-phone"></i> ${phone}</span>
-                <span><i class="fas fa-map-marker-alt"></i> ${location}</span>
+                <span class="contact-item"><i class="fas fa-envelope"></i> ${email}</span>
+                <span class="contact-item"><i class="fas fa-phone"></i> ${phone}</span>
+                <span class="contact-item"><i class="fas fa-map-marker-alt"></i> ${address}</span>
             `;
             if (linkedin) {
-                contactInfo += `<span><i class="fab fa-linkedin"></i> LinkedIn</span>`;
+                contactInfo += `<span class="contact-item"><i class="fab fa-linkedin"></i> <a href="${linkedin}" target="_blank">LinkedIn</a></span>`;
+            }
+            if (github) {
+                contactInfo += `<span class="contact-item"><i class="fab fa-github"></i> <a href="${github}" target="_blank">GitHub</a></span>`;
+            }
+            if (portfolio) {
+                contactInfo += `<span class="contact-item"><i class="fas fa-globe"></i> <a href="${portfolio}" target="_blank">Portfolio</a></span>`;
             }
 
             // Experience
@@ -96,6 +111,11 @@
                 photoHTML = `<img src="${profilePhotoDataURL}" alt="Profile Photo" class="profile-photo">`;
             }
 
+            const summaryTitle = document.getElementById('summaryTitle').textContent || 'Professional Summary';
+            const experienceTitle = document.getElementById('experienceTitle').textContent || 'Work Experience';
+            const educationTitle = document.getElementById('educationTitle').textContent || 'Education';
+            const skillsTitle = document.getElementById('skillsTitle').textContent || 'Skills';
+
             // Generate full resume HTML
             preview.innerHTML = `
                 <div class="header">
@@ -107,32 +127,170 @@
 
                 ${summary ? `
                 <div class="section">
-                    <h2>Professional Summary</h2>
+                    <h2>${summaryTitle}</h2>
                     <p>${summary}</p>
                 </div>
                 ` : ''}
 
                 ${experienceHTML ? `
                 <div class="section">
-                    <h2>Work Experience</h2>
+                    <h2>${experienceTitle}</h2>
                     ${experienceHTML}
                 </div>
                 ` : ''}
 
                 ${educationHTML ? `
                 <div class="section">
-                    <h2>Education</h2>
+                    <h2>${educationTitle}</h2>
                     ${educationHTML}
                 </div>
                 ` : ''}
 
                 ${skillsHTML ? `
                 <div class="section">
-                    <h2>Skills</h2>
+                    <h2>${skillsTitle}</h2>
                     ${skillsHTML}
                 </div>
                 ` : ''}
             `;
+        }
+
+        function updateAcademicPreview() {
+            const preview = document.getElementById('resume-preview');
+            const fullName = document.getElementById('fullName').value || 'Your Name';
+            const title = document.getElementById('title').value || 'Your Professional Title';
+            const email = document.getElementById('email').value || 'email@example.com';
+            const phone = document.getElementById('phone').value || 'Phone Number';
+            const address = document.getElementById('address').value || 'Address';
+            const linkedin = document.getElementById('linkedin').value || '';
+            const summary = document.getElementById('summary').value || 'Professional summary will appear here...';
+            const skills = document.getElementById('skills').value || '';
+
+            const personalInfoTitle = document.getElementById('personalInfoTitle').textContent || 'Personal Information';
+            const summaryTitle = document.getElementById('summaryTitle').textContent || 'Summary';
+            const experienceTitle = document.getElementById('experienceTitle').textContent || 'Work history';
+            const educationTitle = document.getElementById('educationTitle').textContent || 'Education';
+            const skillsTitle = document.getElementById('skillsTitle').textContent || 'Skills';
+            const referencesTitle = document.getElementById('referencesTitle').textContent || 'References';
+
+            // Photo handling
+            let photoHTML = '';
+            if (profilePhotoDataURL) {
+                photoHTML = `<img src="${profilePhotoDataURL}" alt="Profile Photo" class="profile-photo">`;
+            }
+
+            // Left Column
+            let leftColumnHTML = `
+                <div class="left-column">
+                    ${photoHTML}
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> ${phone}</p>
+                        <p><i class="fas fa-envelope"></i> ${email}</p>
+                        <p><i class="fab fa-linkedin"></i> <a href="${linkedin}" target="_blank">${linkedin}</a></p>
+                    </div>
+                    <div class="section">
+                        <h2>${skillsTitle}</h2>
+                        <ul class="skills-list">
+                            ${(skills.split(',').map(skill => `<li>${skill.trim()}</li>`).join(''))}
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h2>${educationTitle}</h2>
+                        ${getEducationHTML()}
+                    </div>
+                    <div class="section">
+                        <h2>${referencesTitle}</h2>
+                        ${getReferencesHTML()}
+                    </div>
+                </div>
+            `;
+
+            // Right Column
+            let rightColumnHTML = `
+                <div class="right-column">
+                    <div class="header">
+                        <h1>${fullName}</h1>
+                        <p>${title}</p>
+                    </div>
+                    <div class="section">
+                        <h2>${summaryTitle}</h2>
+                        <p>${summary}</p>
+                    </div>
+                    <div class="section">
+                        <h2>${experienceTitle}</h2>
+                        ${getExperienceHTML()}
+                    </div>
+                </div>
+            `;
+
+            preview.innerHTML = `<div class="academic-container">${leftColumnHTML}${rightColumnHTML}</div>`;
+        }
+
+        function getExperienceHTML() {
+            const experienceItems = document.querySelectorAll('#experience-container .dynamic-section');
+            let experienceHTML = '';
+            experienceItems.forEach(item => {
+                const jobTitle = item.querySelector('.job-title').value;
+                const company = item.querySelector('.company').value;
+                const duration = item.querySelector('.duration').value;
+                const description = item.querySelector('.job-description').value;
+
+                if (jobTitle || company) {
+                    experienceHTML += `
+                        <div class="experience-item">
+                            <h3>${jobTitle} - ${company}</h3>
+                            <p style="color: #666; font-style: italic; margin-bottom: 8px;">${duration}</p>
+                            <ul>
+                                ${description.split('\n').map(line => `<li>${line}</li>`).join('')}
+                            </ul>
+                        </div>
+                    `;
+                }
+            });
+            return experienceHTML;
+        }
+
+        function getEducationHTML() {
+            const educationItems = document.querySelectorAll('#education-container .dynamic-section');
+            let educationHTML = '';
+            educationItems.forEach(item => {
+                const degree = item.querySelector('.degree').value;
+                const institution = item.querySelector('.institution').value;
+                const year = item.querySelector('.year').value;
+
+                if (degree || institution) {
+                    educationHTML += `
+                        <div class="education-item">
+                            <h3>${degree}</h3>
+                            <p>${institution} - ${year}</p>
+                        </div>
+                    `;
+                }
+            });
+            return educationHTML;
+        }
+
+        function getReferencesHTML() {
+            const referenceItems = document.querySelectorAll('#references-container .dynamic-section');
+            let referencesHTML = '';
+            referenceItems.forEach(item => {
+                const name = item.querySelector('.ref-name').value;
+                const title = item.querySelector('.ref-title').value;
+                const email = item.querySelector('.ref-email').value;
+                const phone = item.querySelector('.ref-phone').value;
+
+                if (name) {
+                    referencesHTML += `
+                        <div class="reference-item">
+                            <h3>${name}</h3>
+                            <p>${title}</p>
+                            <p>${email}</p>
+                            <p>${phone}</p>
+                        </div>
+                    `;
+                }
+            });
+            return referencesHTML;
         }
 
         // Template management
@@ -254,6 +412,37 @@
                 <div class="form-group">
                     <label>Year</label>
                     <input type="text" class="year" placeholder="2018">
+                </div>
+            `;
+            container.appendChild(newSection);
+
+            // Add event listeners
+            newSection.querySelectorAll('input').forEach(input => {
+                input.addEventListener('input', updatePreview);
+            });
+        }
+
+        function addReference() {
+            const container = document.getElementById('references-container');
+            const newSection = document.createElement('div');
+            newSection.className = 'dynamic-section';
+            newSection.innerHTML = `
+                <button class="remove-btn" onclick="this.parentElement.remove(); updatePreview();">&times;</button>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="ref-name" placeholder="Jane Smith">
+                </div>
+                <div class="form-group">
+                    <label>Title / Company</label>
+                    <input type="text" class="ref-title" placeholder="Project Manager, ABC Corp">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="ref-email" placeholder="jane.smith@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" class="ref-phone" placeholder="+1 (555) 987-6543">
                 </div>
             `;
             container.appendChild(newSection);
@@ -401,37 +590,60 @@
         async function downloadPDF() {
             const { jsPDF } = window.jspdf;
             const element = document.getElementById('resume-preview');
-            
-            try {
-                const canvas = await html2canvas(element, {
-                    scale: 2,
-                    useCORS: true,
-                    allowTaint: true,
-                    backgroundColor: '#ffffff'
+
+            if (currentTemplate === 'academic') {
+                const pdf = new jsPDF('p', 'pt', 'a4');
+                pdf.html(element, {
+                    callback: function (pdf) {
+                        const fileName = (document.getElementById('fullName').value || 'Resume').replace(/\s+/g, '_') + '_Resume.pdf';
+                        pdf.save(fileName);
+                    },
+                    x: 0,
+                    y: 0,
+                    html2canvas: {
+                        scale: 0.7
+                    }
                 });
+            } else {
+                // Temporarily set the width of the element to a fixed size for PDF generation
+                element.style.width = '210mm'; // A4 width
 
-                const imgData = canvas.toDataURL('image/png');
-                const pdf = new jsPDF('p', 'mm', 'a4');
-                const imgWidth = 210;
-                const pageHeight = 295;
-                const imgHeight = (canvas.height * imgWidth) / canvas.width;
-                let heightLeft = imgHeight;
-                let position = 0;
+                try {
+                    const canvas = await html2canvas(element, {
+                        scale: 2,
+                        useCORS: true,
+                        allowTaint: true,
+                        backgroundColor: '#ffffff'
+                    });
 
-                pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
-                heightLeft -= pageHeight;
+                    // Restore the original width
+                    element.style.width = '';
 
-                while (heightLeft >= 0) {
-                    position = heightLeft - imgHeight;
-                    pdf.addPage();
+                    const imgData = canvas.toDataURL('image/png');
+                    const pdf = new jsPDF('p', 'mm', 'a4');
+                    const imgWidth = 210;
+                    const pageHeight = 297;
+                    const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                    let heightLeft = imgHeight;
+                    let position = 0;
+
                     pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
                     heightLeft -= pageHeight;
-                }
 
-                const fileName = (document.getElementById('fullName').value || 'Resume').replace(/\s+/g, '_') + '_Resume.pdf';
-                pdf.save(fileName);
-            } catch (error) {
-                alert('Error generating PDF: ' + error.message);
+                    while (heightLeft >= 0) {
+                        position = heightLeft - imgHeight;
+                        pdf.addPage();
+                        pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+                        heightLeft -= pageHeight;
+                    }
+
+                    const fileName = (document.getElementById('fullName').value || 'Resume').replace(/\s+/g, '_') + '_Resume.pdf';
+                    pdf.save(fileName);
+                } catch (error) {
+                    alert('Error generating PDF: ' + error.message);
+                    // Restore the original width in case of an error
+                    element.style.width = '';
+                }
             }
         }
 
@@ -558,7 +770,125 @@
             document.getElementById('photoPreview').addEventListener('click', function() {
                 document.getElementById('profilePhoto').click();
             });
+
+            // Make section titles and form labels editable on click
+            document.querySelectorAll('.form-section .section-title span[id], .form-group label').forEach(element => {
+                element.addEventListener('click', function() {
+                    this.contentEditable = true;
+                    this.focus();
+                    // Store original text to revert if needed (optional)
+                    this.dataset.originalText = this.textContent;
+                });
+
+                element.addEventListener('blur', function() {
+                    this.contentEditable = false;
+                    // For simplicity, we'll just update the preview directly here.
+                    updatePreview(); // Update resume preview with new title
+                });
+
+                element.addEventListener('keydown', function(event) {
+                    if (event.key === 'Enter') {
+                        event.preventDefault(); // Prevent new line
+                        this.blur(); // Trigger blur to save changes
+                    }
+                });
+            });
         });
+
+        // Inject Dummy Data for Development
+        document.getElementById('injectDummyDataBtn').addEventListener('click', injectDummyData);
+
+        async function injectDummyData() {
+            try {
+                // Fetch data only once
+                if (allDummyProfiles.length === 0) {
+                    const response = await fetch('seeder.json');
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    allDummyProfiles = await response.json();
+                }
+
+                if (allDummyProfiles.length === 0) {
+                    alert('No dummy data found in seeder.json.');
+                    return;
+                }
+
+                const dummyData = allDummyProfiles[currentProfileIndex];
+
+                // Increment index for next click, loop back if end is reached
+                currentProfileIndex = (currentProfileIndex + 1) % allDummyProfiles.length;
+
+                document.getElementById('fullName').value = dummyData.fullName || '';
+                document.getElementById('title').value = dummyData.title || '';
+                document.getElementById('email').value = dummyData.email || '';
+                document.getElementById('phone').value = dummyData.phone || '';
+                document.getElementById('address').value = dummyData.address || '';
+                document.getElementById('linkedin').value = dummyData.linkedin || '';
+                document.getElementById('github').value = dummyData.github || '';
+                document.getElementById('portfolio').value = dummyData.portfolio || '';
+                document.getElementById('summary').value = dummyData.summary || '';
+                document.getElementById('skills').value = dummyData.skills || '';
+
+                // Clear existing dynamic sections before adding new ones
+                document.getElementById('experience-container').innerHTML = '';
+                document.getElementById('education-container').innerHTML = '';
+                document.getElementById('references-container').innerHTML = '';
+
+                // Populate Experience
+            if (dummyData.experience && dummyData.experience.length > 0) {
+                dummyData.experience.forEach((exp) => {
+                    addExperience(); // Always add a new section for each item
+                    const currentExp = document.querySelector('#experience-container .dynamic-section:last-child');
+                    if (currentExp) {
+                        currentExp.querySelector('.job-title').value = exp.jobTitle || '';
+                        currentExp.querySelector('.company').value = exp.company || '';
+                        currentExp.querySelector('.duration').value = exp.duration || '';
+                        currentExp.querySelector('.job-description').value = exp.description || '';
+                    }
+                });
+            } else {
+                addExperience(); // Ensure at least one empty section exists
+            }
+
+            // Populate Education
+            if (dummyData.education && dummyData.education.length > 0) {
+                dummyData.education.forEach((edu) => {
+                    addEducation(); // Always add a new section for each item
+                    const currentEdu = document.querySelector('#education-container .dynamic-section:last-child');
+                    if (currentEdu) {
+                        currentEdu.querySelector('.degree').value = edu.degree || '';
+                        currentEdu.querySelector('.institution').value = edu.institution || '';
+                        currentEdu.querySelector('.year').value = edu.year || '';
+                    }
+                });
+            } else {
+                addEducation(); // Ensure at least one empty section exists
+            }
+
+            // Populate References
+            if (dummyData.references && dummyData.references.length > 0) {
+                dummyData.references.forEach((ref) => {
+                    addReference(); // Always add a new section for each item
+                    const currentRef = document.querySelector('#references-container .dynamic-section:last-child');
+                    if (currentRef) {
+                        currentRef.querySelector('.ref-name').value = ref['ref-name'] || '';
+                        currentRef.querySelector('.ref-title').value = ref['ref-title'] || '';
+                        currentRef.querySelector('.ref-email').value = ref['ref-email'] || '';
+                        currentRef.querySelector('.ref-phone').value = ref['ref-phone'] || '';
+                    }
+                });
+            } else {
+                addReference(); // Ensure at least one empty section exists
+            }
+
+                // Trigger update to refresh the preview
+                updatePreview();
+            } catch (error) {
+                console.error('Error injecting dummy data:', error);
+                alert('Failed to inject dummy data. Check console for details.');
+            }
+        }
 
         // Uncomment the line below to load sample data on page load
         // setTimeout(loadSampleData, 1000);1000);
